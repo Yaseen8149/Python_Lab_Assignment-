@@ -1,0 +1,74 @@
+#
+#Siddiqui Yaseen
+#
+
+Q.1 Print the reverse order series using a while loop.
+
+Solution:
+numbers = [10,11,12,13,14,15,16]
+
+index = 6
+while index >=1:
+   print(f"The reversed series is = {numbers[index]}")
+   index  = index - 1
+
+Output: 
+The reversed series is = 16
+The reversed series is = 15
+The reversed series is = 14
+The reversed series is = 13
+The reversed series is = 12
+The reversed series is = 11
+
+Q.2 Create a code that describe the use of break statement in while loop.
+
+Solution:
+numbers = 1
+
+while numbers < 6:
+    print(numbers)
+    if numbers == 4:
+        break
+    numbers = numbers + 1
+
+Output:
+1
+2
+3
+4
+
+Q.3 Write a Python program using a while loop to iterate through each character of the string "Python" and print each character on a new line. Additionally, calculate and print the length of the string.
+
+Solution:
+str = "python"
+
+index=0
+while index < len(str):
+    print(str[index])
+    index = index + 1
+print("The lenght of string is: ",len(str))
+
+Output: 
+p
+y
+t
+h
+o
+n
+The lenght of string is:  6
+
+Q.4 Write a Python program that takes an integer input from the user and calculates its factorial using a while loop. Display the result as the factorial of the entered number.
+
+Solution: 
+number = int(input("enter a number: "))
+
+factorial = 1
+i = 1
+while i <= number:
+    factorial = factorial * i
+    i = i + 1
+print("The factorial of", number, "is:",factorial)
+
+Output: 
+enter a number:  5
+The factorial of 5 is: 120

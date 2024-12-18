@@ -1,0 +1,83 @@
+#
+# Siddiqui Yaseen
+#
+
+Q.1 Print helloworld.
+
+Solution:
+print("Hello world")
+
+Output:
+Hello world
+
+Q.2 Describe local variable and global variable code.
+
+Solution:
+def swapTwonumber():
+    a=10
+    b=20
+    #print("Before swaping -> a= ",a,"b= " , b )
+    print(f"Before swaping a= {a} b={b}")
+    a=a*b
+    b=a/b
+    a=a/b
+    print(f"After swaping a= {a} b={b}")
+    
+swapTwonumber()
+
+Output:
+Before swaping a= 10 b=20
+After swaping a= 20.0 b=10.0
+
+Q.3 Write a code that describe Indentation error.
+
+Solution:
+def abc():
+print("Hiii")
+
+abc()
+
+Output:
+  Cell In[10], line 2
+    print("Hiii")
+    ^
+IndentationError: expected an indented block after function definition on line 1
+
+Q.4 Write a code that describe local and global variable with same name.
+
+Solution:
+
+
+Output:
+
+
+Q.5 Write a code for string, int and float input.
+
+Solution:
+# Taking input for a string
+string_input = input("Enter a string: ")
+
+# Taking input for an integer
+int_input = int(input("Enter an integer: "))
+
+# Taking input for a float
+float_input = float(input("Enter a float: "))
+
+# Display the collected inputs
+print("\nYou entered:")
+print(f"String: {string_input}")
+print(f"Integer: {int_input}")
+print(f"Float: {float_input}")
+
+Output:
+Enter a string:  Hello
+Enter an integer:  25
+Enter a float:  5
+
+You entered:
+String: Hello
+Integer: 25
+Float: 5.0
+
+
+

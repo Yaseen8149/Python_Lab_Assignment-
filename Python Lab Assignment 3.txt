@@ -1,0 +1,77 @@
+#
+# Siddiqui Yaseen
+#
+
+Q.1 Using input() function take one number from the user and using ternary operators check whether the number is even or odd.
+
+Solution: 
+# Take input from the user
+num = int(input("Enter a number: "))
+
+# Use ternary operator to check if the number is even or odd
+result = "Even" if num % 2 == 0 else "Odd"
+
+# Print the result
+print(f"The number {num} is {result}.")
+
+Output: 
+Enter a number:  2
+The number 2 is Even.
+
+Q.2 Using input function take two number and then swap the number.
+
+Solution:
+def swapTwonumber():
+    a=10
+    b=20
+    #print("Before swaping -> a= ",a,"b= " , b )
+    print(f"Before swaping a= {a} b={b}")
+    a=a*b
+    b=a/b
+    a=a/b
+    print(f"After swaping a= {a} b={b}")
+    
+swapTwonumber()
+
+Output:     
+swapTwonumber()
+Before swaping a= 10 b=20
+After swaping a= 20.0 b=10.0
+
+Q.3 Write a Program to Convert Kilometers to Miles.
+
+Solution: 
+1 kilometer = 0.621371 miles
+
+# Function to convert kilometers to miles
+def kilometers_to_miles(km):
+    miles = km * 0.621371
+    return miles
+
+# Input from the user
+km = float(input("Enter distance in kilometers: "))
+
+# Convert and display the result
+miles = kilometers_to_miles(km)
+print(f"{km} kilometers is equal to {miles} miles.")
+
+Output:
+Enter distance in kilometers:  10
+10.0 kilometers is equal to 6.21371 miles.
+
+Q.4 Find the Simple Interest on Rs. 200 for 5 years at 5% per year.
+
+Solution: 
+# Define the values
+P = 200  # Principal amount
+R = 5    # Rate of interest per year
+T = 5    # Time period in years
+
+# Calculate the Simple Interest
+SI = (P * R * T) / 100
+
+# Display the result
+print("The Simple Interest is Rs.", SI)
+
+Output: 
+The Simple Interest is Rs. 50.0

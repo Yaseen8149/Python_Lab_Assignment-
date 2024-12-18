@@ -1,0 +1,107 @@
+#
+# Siddiqui Yaseen
+#
+
+Q.1 Write a program for arithmatic operators.
+
+Solution:
+#Arithmetic Operators i.e. +, -, , /, %, *(exponent), //(floor division)
+#==========================================================================
+
+def ex1():
+	a = 5
+	b = 3
+	#print(a+b)
+	#print(a-b)
+	#print(a*b)
+    
+	#print(a/b)
+	#print(b/a)
+	#print(a//b)
+	#print(b//a)
+    
+	print(a%b)
+	print(b%a)
+	print(a**b)
+    
+ex1()
+
+Output:
+2
+3
+125
+
+Q.2 Write a program for assignment operators.
+
+Solution:
+# Assignment operators i.e. =, +=, -=
+#==========================================================================
+
+def ex2():	
+    c = 10
+    c+=1
+    print(c)
+    c += 3 #c = c + 3
+    print(c)
+    c -= 2 #c = c - 2
+    print(c)
+    
+ex2(); 
+
+Output:
+11
+14
+12
+
+Q.3 Write a program for Bitwise operators.
+
+Solution:
+# Bitwise Operators->  &, |, ^
+#==========================================================================
+
+def ex7():
+    a = 9  #1001
+    b = 8  #1000
+    print(bin(9))
+    print(bin(8))
+    #print(a & b, bin(a & b))
+    #print(a | b, bin(a | b))
+    #print(a ^ b, bin(a ^ b))
+
+ex7()
+
+Output:
+0b1001
+0b1000
+
+Q.4 Write a program to calculate greatest of three numbers.
+
+Solution:
+# Function to find the greatest of three numbers
+def greatest_of_three(num1, num2, num3):
+    # Compare the numbers and return the greatest
+    if num1 >= num2 and num1 >= num3:
+        return num1
+    elif num2 >= num1 and num2 >= num3:
+        return num2
+    else:
+        return num3
+
+# Taking input from the user
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+num3 = float(input("Enter the third number: "))
+
+# Find the greatest number
+greatest = greatest_of_three(num1, num2, num3)
+
+# Output the result
+print(f"The greatest number is: {greatest}")
+
+Output: 
+Enter the first number:  20
+Enter the second number:  50
+Enter the third number:  25
+The greatest number is: 50.0
+
+

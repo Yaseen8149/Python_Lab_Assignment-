@@ -1,0 +1,75 @@
+#
+# Siddiqui Yaseen
+#
+
+Q.1 Declare a div() function with two parameters. Then call the function and pass two numbers and display their division.
+
+Solution: 
+# Declare the div function
+def div(a, b):
+    if b != 0:
+        return a / b
+    else:
+        return "Error: Division by zero is not allowed."
+
+# Call the function with two numbers
+result = div(10, 2)
+
+# Display the result
+print("Result of division:", result)
+
+Output:
+Result of division: 5.0
+
+Q.2 Declare a square() function with one parameter.Then call the function and pass one number and display the square of that number 
+
+Solution:
+# Function to calculate the square of a number
+def square(number):
+    return number ** 2
+
+# Calling the function and passing a number
+num = 5
+result = square(num)
+
+# Displaying the result
+print(f"The square of {num} is {result}")
+
+Output: 
+The square of 5 is 25
+
+Q.3 Using max() and min() functions display the maximum and minimum of 5 random numbers.
+
+Solution:
+import random
+
+# Generate 5 random numbers
+random_numbers = [random.randint(1, 100) for _ in range(5)]
+
+# Find the maximum and minimum
+max_number = max(random_numbers)
+min_number = min(random_numbers)
+
+# Display the numbers and results
+print("Random numbers:", random_numbers)
+print("Maximum:", max_number)
+print("Minimum:", min_number)
+
+Output:
+Random numbers: [5, 55, 40, 5, 6]
+Maximum: 55
+Minimum: 5
+
+Q.4 Accept a name from the user and display that in lower case using lower() function.
+
+Solution: 
+# Accepting a name from the user
+name = input("Please enter your name: ")
+
+# Displaying the name in lowercase
+print(name.lower())
+
+Output:
+Please enter your name:  YASEEN
+Yaseen
+
